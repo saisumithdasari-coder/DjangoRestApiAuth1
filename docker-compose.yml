@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  backend:
+    build: backend
+    ports:
+      - 8000:8000
+    image: jor2/djangobackend
+
+  frontend:
+    build: frontend
+    ports:
+      - 5000:5000
+    image: jor2/flaskfrontend
